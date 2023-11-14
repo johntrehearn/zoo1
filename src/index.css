@@ -22,6 +22,36 @@ a:hover {
   color: #535bf2;
 }
 
+
+#cardLikes {
+
+  display: flex;
+  height: 70px;
+  
+}
+
+p.likes {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+p.material-symbols-outlined {
+  margin: 0;
+  padding: 0;
+
+}
+
+.likes_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60px;
+  justify-content: center;
+  font-size: 30px;
+
+}
+
 h1 {
   color: rgb(17, 0, 255);
   text-align: center;
@@ -35,6 +65,10 @@ h1 {
   
 }
 
+#cardLikes {
+  text-align: center;
+
+}
  .card {
   padding: 2em; 
   margin-bottom: 20px;
@@ -76,6 +110,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  border: 2px solid white;
 }
 button:hover {
   border-color: #646cff;
