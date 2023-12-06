@@ -1,7 +1,7 @@
 import { useState } from 'react';
 /* import Card from './components/Card.jsx'; */
-import Header from './components/header';
-import Footer from './components/footer';
+/* import Header from './components/header';
+import Footer from './components/footer'; */
 import {animals} from './animalsList';
 import { birds } from './animalsList';
 import Root from "./pages/Root"
@@ -9,7 +9,7 @@ import About from "./pages/About"
 import Animals from './pages/Animals';
 import Birds from './pages/Birds';
 import ErrorPage from './pages/ErrorPage';
-import { createBrowserRouter, RouteProvider, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home.jsx';
 
 
@@ -75,7 +75,7 @@ function App() {
 
         { path: "/", element: <Home></Home>},
         {
-          path: "/amimals",
+          path: "/animals",
           element: (
             <Animals
             searchHandler={searchHandler}
