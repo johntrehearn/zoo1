@@ -1,6 +1,6 @@
 import Card from "../components/Card.jsx"
 
-function Birds ({birdList, searchHandler, removeBirdHandler, likeBirdHandler, search,})
+function Birds ({birdList, searchHandler, removeBirdHandler, likesBirdHandler, search,})
 {
     return (
         <>
@@ -13,8 +13,8 @@ function Birds ({birdList, searchHandler, removeBirdHandler, likeBirdHandler, se
                 )
                 .map((bird)=> (
                     <Card
-                    addLikes={() => likeBirdHandler(bird.name, "add")}
-                    removeLikes={() => likeBirdHandler(bird.name, "remove")}
+                    addLikes={() => likesBirdHandler(bird.name, "add")}
+                    clearLikes={() => likesBirdHandler(bird.name, "remove")}
                     key={bird.name} {...bird} click={() => removeBirdHandler(bird.name)}
                     />
 

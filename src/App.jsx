@@ -1,11 +1,11 @@
 import { useState } from 'react';
-/* import Card from './components/Card.jsx'; */
+/* import Card from './pages/Card'; */
 /* import Header from './components/header';
 import Footer from './components/footer'; */
-import {animals} from './animalsList';
+import { animals } from './animalsList';
 import { birds } from './animalsList';
-import Root from "./pages/Root"
-import About from "./pages/About"
+import Root from './pages/Root';
+import About from './pages/About';
 import Animals from './pages/Animals';
 import Birds from './pages/Birds';
 import ErrorPage from './pages/ErrorPage';
@@ -18,9 +18,7 @@ function App() {
   const [birdList, setBirdList] = useState(birds);
 
   const removeHandler = (name) => {
-    const updatedAnimalArray = animalList.filter(
-      (animal) => animal.name !== name
-      );
+    const updatedAnimalArray = animalList.filter((animal) => animal.name !== name);
       setAnimals(updatedAnimalArray);
     };
 
@@ -61,7 +59,6 @@ function App() {
        } else {
           return bird;
         }
-
       });
     setBirdList(updatedArray)
   }
@@ -100,8 +97,6 @@ function App() {
             />
           ),
         },
-
-
       ],
     },
 
