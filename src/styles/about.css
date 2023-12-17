@@ -1,0 +1,34 @@
+.aboutMain {
+    background-color: green;
+    width: 100vw;
+    
+    justify-content: center;
+    padding-top: 125px;
+    
+    
+}
+
+.JT_Info {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+img {
+    display: inline-block;
+    margin-left: 100px;
+    width:100vw;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.info_text {
+    margin-top: 200px;
+    margin-left: 60px;
+    height: 90px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 50px;
+  
+}
