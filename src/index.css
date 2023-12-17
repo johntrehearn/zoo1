@@ -61,6 +61,12 @@ h1 {
 
 /* Images */
 
+.entryPic{
+  height: 50vh;
+  width: auto;
+  border: solid 5px #535bf2;
+}
+
 animalImg {
   height: 900px;
   border: solid, 5px green;
