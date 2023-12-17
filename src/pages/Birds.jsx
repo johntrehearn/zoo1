@@ -4,8 +4,14 @@ function Birds ({birdList, searchHandler, removeBirdHandler, likesBirdHandler, s
 {
     return (
         <>
-        <h1>Johns Bird Zoo</h1>
-        <input type="text" onChange={searchHandler} />
+        <h1 className='zooTitle'>John's Bird Zoo</h1>
+        <div className='birdSearchContainer'>
+
+        <input className='birdSearch' type="text" placeholder='Search our bird zoo' onChange={searchHandler} />
+
+        </div>
+
+
         <div className='cards'>
             {birdList
                 .filter((bird) =>

@@ -98,6 +98,32 @@ animalImg {
   border: solid, 5px green;
 }
 
+/* Animal Page */
+
+.animalSearchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background-color: rgb(91, 5, 59);
+  height: 30px;
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.zooTitle {
+  color: rgb(10, 10, 93);
+}
+/* Bird Page */
+
+.birdSearchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Footer */
 
 
 

@@ -9,8 +9,13 @@ function Animals({
 }) {
   return (
     <>
-      <h1>John's Animals Zoo</h1>
-      <input type="text" onChange={searchHandler} />
+      <h1 className='zooTitle'>John's Animals Zoo</h1>
+      <div className='animalSearchContainer'>
+
+      <input className='animalSearch'type="text" onChange={searchHandler} placeholder='Search our animal zoo' />
+      </div>
+      
+      
       <div className="cards">
         {animalsList
           .filter((animal) =>
