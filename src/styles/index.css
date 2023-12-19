@@ -44,7 +44,7 @@ li a:hover {
 /* Body */
 
 body {
-  background-image: url('assets/forest3.JPG');
+  background-image: url('../assets/forest3.JPG');
   background-repeat: repeat;
 }
 
