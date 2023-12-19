@@ -12,7 +12,7 @@ function About () {
         <div className='JT_Info'>
 
 
-        <img src={jt} alt="" />
+        <img className='aboutImg' src={jt} alt="A picture of me on a forest bridge" />
         <p className='info_text'>This is a project for the React Course at Business College Helsinki.  Please find me at
         
         <a href="https://github.com/johntrehearn"> https://github.com/johntrehearn</a>
