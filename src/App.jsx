@@ -10,7 +10,7 @@ import Animals from './pages/Animals';
 import Birds from './pages/Birds';
 import ErrorPage from './pages/ErrorPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/home.jsx';
+import Home from './pages/Home';
 
 
 function App() {
@@ -19,27 +19,27 @@ function App() {
 
   const removeHandler = (name) => {
     const updatedAnimalArray = animalList.filter((animal) => animal.name !== name);
-      setAnimals(updatedAnimalArray);
-    };
+    setAnimals(updatedAnimalArray);
+  };
 
-    const removeBirdHandler = (name) => {
-      const updatedArray = birdList.filter((bird) => bird.name !== name);
-      setBirdList(updatedArray);
-    }
+  const removeBirdHandler = (name) => {
+    const updatedArray = birdList.filter((bird) => bird.name !== name);
+    setBirdList(updatedArray);
+  }
 
-    const [search, setSearch] = useState('');
-  
-    const searchHandler = (event) => {
-      setSearch(event.target.value);
-    };
-    
+  const [search, setSearch] = useState('');
+
+  const searchHandler = (event) => {
+    setSearch(event.target.value);
+  };
+
   const likesHandler = (name, action) => {
     const updatedArray = animalList.map((animal) => {
       if (animal.name === name) {
         if (action === 'add') {
-          return {...animal, likes: animal.likes + 1};
+          return { ...animal, likes: animal.likes + 1 };
         } else {
-          return {...animal, likes: animal.likes - 1};
+          return { ...animal, likes: animal.likes - 1 };
         }
       } else {
         return animal;
@@ -52,60 +52,60 @@ function App() {
     const updatedArray = birdList.map((bird) => {
       if (bird.name === name) {
         if (action === "add") {
-          return {...bird, likes: bird.likes + 1};
+          return { ...bird, likes: bird.likes + 1 };
         } else {
-          return {...bird, likes: bird.likes - 1};
+          return { ...bird, likes: bird.likes - 1 };
         }
-       } else {
-          return bird;
-        }
-      });
+      } else {
+        return bird;
+      }
+    });
     setBirdList(updatedArray)
   }
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Root/>,
-      errorElement: <ErrorPage/>,
+      element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
 
-        { path: "/", element: <Home></Home>},
+        { path: "/", element: <Home></Home> },
         {
           path: "/animals",
           element: (
             <Animals
-            searchHandler={searchHandler}
-            removeHandler={removeHandler}
-            search={search}
-            animalsList={animalList}
-            likesHandler={likesHandler}
+              searchHandler={searchHandler}
+              removeHandler={removeHandler}
+              search={search}
+              animalsList={animalList}
+              likesHandler={likesHandler}
             />
           ),
         },
 
-        {path: "/about", element: <About></About>},
+        { path: "/about", element: <About></About> },
         {
           path: "/birds",
           element: (
             <Birds
-            searchHandler={searchHandler}
-            removeBirdHandler={removeBirdHandler}
-            search={search}
-            birdList={birdList}
-            likesBirdHandler={likesBirdHandler}
+              searchHandler={searchHandler}
+              removeBirdHandler={removeBirdHandler}
+              search={search}
+              birdList={birdList}
+              likesBirdHandler={likesBirdHandler}
             />
           ),
         },
       ],
     },
 
-    
+
   ]);
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   );
 }
