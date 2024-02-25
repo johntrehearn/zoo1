@@ -1,6 +1,6 @@
 :root {
   font-family: Agbalumo, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -21,7 +21,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(109, 110, 111);
-  position: sticky; top: 0;
+  position: sticky;
+  top: 0;
 
 }
 
@@ -52,7 +53,7 @@ h1 {
   color: rgb(4, 2, 2);
   text-align: center;
   margin-top: 0;
-  
+
 }
 
 
@@ -63,7 +64,6 @@ h1 {
 /* Home Page */
 
 .jtZoos {
-  weight: 80vw;
   height: 80vh;
   display: flex;
   justify-content: space-around;
@@ -87,7 +87,7 @@ h2 {
 
 /* Images */
 
-.entryPic{
+.entryPic {
   height: 50vh;
   width: auto;
   border: solid 5px #535bf2;
@@ -115,6 +115,7 @@ input {
 .zooTitle {
   color: rgb(10, 10, 93);
 }
+
 /* Bird Page */
 
 .birdSearchContainer {
@@ -140,6 +141,7 @@ a {
   text-decoration: inherit;
   text-decoration: none;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -157,8 +159,8 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2px;
-  
-  
+
+
 }
 
 
@@ -169,9 +171,10 @@ a:hover {
   justify-content: space-between;
   margin-top: 10px;
   text-align: center;
- 
-  
+
+
 }
+
 .like {
   margin-left: 10px;
 
@@ -181,7 +184,7 @@ p.likes {
   font-size: 20px;
   margin: 1px;
   padding-left: 5px;
-  
+
 }
 
 p.material-symbols-outlined {
@@ -194,8 +197,8 @@ p.material-symbols-outlined {
   display: flex;
   flex-direction: column;
   width: 40px;
- 
-  
+
+
 
 }
 
@@ -205,11 +208,12 @@ p.material-symbols-outlined {
   width: 10px;
   color: #242424;
 }
- .card {
-  padding: 2em; 
+
+.card {
+  padding: 2em;
   margin-bottom: 20px;
   border: solid 7px rgb(4, 0, 0);
-  max-width: auto ;
+  max-width: auto;
   max-height: 70vh;
   border-radius: 10px;
   background-color: rgb(35, 84, 35);
@@ -249,7 +253,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   border: solid whitesmoke 1px;
- 
+
 }
 
 
@@ -257,6 +261,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -265,6 +270,5 @@ button:focus-visible {
 .closeBut {
   margin-left: 350px;
   font-size: 10px;
- 
-}
 
+}
